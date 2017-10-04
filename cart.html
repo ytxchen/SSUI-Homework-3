@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Paw Cart</title>
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  <div class="nav_bar">
+    <div class="placeholder"></div>
+    <a class="shop_button big_header" href="./products.html"> < Shop</a>
+    <div class="logo"><a href="./index.html"><img src="assets/logo.png"></a></div>
+  </div>
+  <hr>
+
+  <div class="contents">
+    <div class="cart_header">
+      <div class="big_header cart_header_label">Shopping Cart</div>
+      <div class="cart_header_text cart_header_quantity_label">quantity:</div>
+      <div class="cart_header_text cart_header_price_label">price:</div>
+      <hr>
+    </div>
+
+    <div class="cart_entry">
+      <img class="cart_image" src="assets/dog_harness.jpg">
+      <div class="cart_entry_details">
+        <div class="cart_entry_label">Dog Harness</div>
+        <div class="cart_entry_size">Size: medium</div>
+        <div class="cart_entry_color">
+          <div class="cart_entry_color_label">Color:</div>
+          <div class="color_block night_moon"></div>
+          <div class="color_label">night moon</div>
+        </div>
+        <div class="cart_remove_button"
+             onclick="removeCartEntry(this)">Remove from Cart</div>
+      </div>
+      <div class="cart_quantity_widget">
+        <div class="quantity_change_button quantity_button"
+             onclick="decreaseQuantity(this)"> - </div>
+        <div class="quantity_number quantity_button"> 2 </div>
+        <div class="quantity_change_button quantity_button"
+             onclick="increaseQuantity(this)"> + </div>
+      </div>
+      <div class="cart_entry_price"> $20.00 </div>
+    </div>
+    <hr>
+
+    <div class="cart_entry">
+      <img class="cart_image" src="assets/cat_harness.jpg">
+      <div class="cart_entry_details">
+        <div class="cart_entry_label">Cat Harness</div>
+        <div class="cart_entry_size">Size: tiny</div>
+        <div class="cart_entry_color">
+          <div class="cart_entry_color_label">Color:</div>
+          <div class="color_block fire_orange"></div>
+          <div class="color_label">fire orange</div>
+        </div>
+        <div class="cart_remove_button"
+             onclick="removeCartEntry(this)">Remove from Cart</div>
+      </div>
+      <div class="cart_quantity_widget">
+        <div class="quantity_change_button quantity_button"
+             onclick="decreaseQuantity(this)"> - </div>
+        <div class="quantity_number quantity_button"> 4 </div>
+        <div class="quantity_change_button quantity_button"
+             onclick="increaseQuantity(this)"> + </div>
+      </div>
+      <div class="cart_entry_price"> $20.00 </div>
+    </div>
+    <hr>
+
+    <div class="cart_entry">
+      <img class="cart_image" src="assets/gps_collar.jpg">
+      <div class="cart_entry_details">
+        <div class="cart_entry_label">GPS Tracker Collar</div>
+        <div class="cart_entry_size">Size: small</div>
+        <div class="cart_entry_color">
+          <div class="cart_entry_color_label">Color:</div>
+          <div class="color_block strawberry"></div>
+          <div class="color_label">strawberry</div>
+        </div>
+        <div class="cart_remove_button"
+             onclick="removeCartEntry(this)">Remove from Cart</div>
+      </div>
+      <div class="cart_quantity_widget">
+        <div class="quantity_change_button quantity_button"
+             onclick="decreaseQuantity(this)"> - </div>
+        <div class="quantity_number quantity_button"> 1 </div>
+        <div class="quantity_change_button quantity_button"
+             onclick="increaseQuantity(this)"> + </div>
+      </div>
+      <div class="cart_entry_price"> $20.00 </div>
+    </div>
+    <hr class="divider_bottom_margin">
+
+    <div class="cart_footer">
+      <div class="big_header cart_subtotal">
+        <div class="cart_subtotal_label">
+          Subtotal:
+        </div>
+        <div class="cart_subtotal_value">
+          $ 140.00
+        </div>
+      </div>
+
+      <div class="checkout_button">Checkout</div>
+    </div>
+
+  </div>
+</body>
+</html>
